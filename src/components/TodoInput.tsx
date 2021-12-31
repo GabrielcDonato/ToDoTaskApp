@@ -7,9 +7,13 @@ interface TodoInputProps {
 }
 
 export function TodoInput({ addTask }: TodoInputProps) {
-  // const [task, setTask] = useState('');
+  const [task, setTask] = useState('');
 
   function handleAddNewTask() {
+    const data = {
+      id: String (new Date().getTime()),
+      name: addTask
+  }
     //TODO - Call addTask if task not empty and clean input value 
   }
 
